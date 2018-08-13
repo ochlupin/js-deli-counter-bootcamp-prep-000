@@ -26,7 +26,7 @@ function nowServing(katzDeli) {
 var katzDeliLine = [];
 
 
-// function currentLine accepts one paremeter katzDeli. The function body creates a counter variable i and assigns it value 0. Then a while loop is initialized and runs as long as i < katzDeli.length. The loop body pushes the string 'i+1. katzDeli[i]'
+// function currentLine accepts one paremeter katzDeli. The function body creates a counter variable i and assigns it value 0. Then a while loop is initialized and runs as long as i < katzDeli.length. The loop body pushes the string ${i+1}. ${katzDeli[i]} to the previously created array katzDeliLine, after each iteration the counter variable is incremented by 1. The function continues with an if statement and checks if katzDeli.length is equal to 0. If yes it returns the s tring "The line is currently empty." Else it retuns "The line is currently: katzDeliLine"
 function currentLine(katzDeli) {
   let i = 0;
   while (i < katzDeli.length) {
