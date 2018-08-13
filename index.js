@@ -22,12 +22,15 @@ function nowServing(katzDeli) {
   }
 };
 
+// this variable was created for the sole purpose two joining (interpolating two strings)
 var katzDeliLine = [];
 
+
+// function currentLine accepts one paremeter katzDeli. The function body creates a counter variable i and assigns it value 0. Then a while loop is initialized and runs as long as i < katzDeli.length. The loop body pushes the string 'i+1. katzDeli[i]'
 function currentLine(katzDeli) {
   let i = 0;
   while (i < katzDeli.length) {
-    katzDeliLine.push(` ` + [i + 1] + `. ` + katzDeli[i])
+    katzDeliLine.push(` $[i + 1]. katzDeli[i]`)
     i++;
   }
   if (katzDeli.length === 0) {
